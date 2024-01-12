@@ -3,6 +3,9 @@
 /* font-family: 'Poppins', sans-serif; */
 :root{
     --fontepadrao:'Poppins', sans-serif;
+    --cor01:#272D2D;
+    --cor02:#6C2BB6;
+    --cor03:#F7F7F2;
 }
 *{
     margin: 0;
@@ -31,10 +34,13 @@ nav{
 .nav-itens>li>a{
     padding-left: 20px;
     padding-right: 20px;
-    color: blueviolet;
+    color:var(--cor01);
     text-decoration: none;
     font-weight: 900;
 }
+    .nav-itens>li>a:hover{
+        color: var(--cor02);
+    }
 
 .mobile-menu-icon{
     display: none;
@@ -74,4 +80,14 @@ nav{
     .open{
         display: block;
     }
+}
+
+section{
+    height: 100vh;
+}
+.titulo{
+    padding: 50px 50px 80px 50px;
+}
+.titulo-item{
+    font-size: 35px;
 }
