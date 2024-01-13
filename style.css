@@ -6,6 +6,8 @@
     --cor01:#272D2D;
     --cor02:#6C2BB6;
     --cor03:#F7F7F2;
+    --linkdlin:#0e76a8;
+    --tiktok:#EE1D52;
 }
 *{
     margin: 0;
@@ -91,3 +93,71 @@ section{
 .titulo-item{
     font-size: 35px;
 }
+
+
+.page-footer{
+    background-color: #272D2D;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-logo{
+    color: var(--cor03);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.social-buttons{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.socialmedias-button{
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    outline: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: grid;
+    place-items: center;
+}
+.socialmedias-button:hover{
+    outline-offset: 3px;
+    transition: all 0.3s;
+}
+.socialmedias-button img {
+    transition: all 0.3s;
+}
+.socialmedias-button:hover img {
+    transform: scale(1.15);
+}
+img{
+    height: 25px;
+    width: 25px;
+}
+.insta{
+    height: 30px;
+    width: 30px;
+}
+.linkedin{
+    height: 20px;
+    width: 20px;
+}
+
+.socialmedias-button:hover:nth-child(1){
+    background: radial-gradient(
+        circle at 30% 107%, #fdf497 0%,#fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%
+    );
+}
+.socialmedias-button:hover:nth-child(2){
+    background-color: var(--linkdlin);
+}
+.socialmedias-button:hover:nth-child(3){
+    background-color: var(--tiktok);
+}
+
