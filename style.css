@@ -161,3 +161,8 @@ img{
     background-color: var(--tiktok);
 }
 
+.button{
+    background-color: #0e76a8;
+    height: 25px;
+    width: 55px;
+}
