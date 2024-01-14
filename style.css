@@ -151,18 +151,12 @@ img{
 
 .socialmedias-button:hover:nth-child(1){
     background: radial-gradient(
-        circle at 30% 107%, #fdf497 0%,#fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%
+        circle at 30% 107%, #6907F2 0%,#6907F2 5%, #610BD9 45%, #471BA6 60%, #361973 90%
     );
 }
-.socialmedias-button:hover:nth-child(2){
+/* .socialmedias-button:hover:nth-child(2){
     background-color: var(--linkdlin);
 }
 .socialmedias-button:hover:nth-child(3){
     background-color: var(--tiktok);
-}
-
-.button{
-    background-color: #0e76a8;
-    height: 25px;
-    width: 55px;
-}
+} */
