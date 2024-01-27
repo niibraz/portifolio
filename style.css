@@ -1,23 +1,19 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&family=Lato&family=Poppins:wght@500&display=swap');
-/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@500&display=swap');
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
 :root{
     --fontepadrao:'Poppins', sans-serif;
-    --cor01:#272D2D;
-    --cor02:#6C2BB6;
-    --cor03:#F7F7F2;
-    --linkdlin:#0e76a8;
-    --tiktok:#EE1D52;
+    --cor01:#EDF2F4;
+    --cor02:#272D2D;
+    --cor03:#1B1F22;
+    --cor04:#5438DC;
+    --cor05:#EF3054;
 }
 *{
     margin: 0;
     padding: 0;
-    height: 100vh;
 }
-.sidebar {
-    background-color: var(--cor01);
-    height: 600px;
-    width: 200px;
-    margin: 20px 0 0 10px;
-    border-radius: 15px;
+body{
+    background-color: var(--cor02);
 }
