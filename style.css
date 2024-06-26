@@ -9,11 +9,36 @@
     --cor03:#1B1F22;
     --cor04:#5438DC;
     --cor05:#EF3054;
+    --cor06:#C41593;
+    --cor07:#4C2FA6;
+    --cor08:#0E0E18;
+    --cor09:#F2A049;
+
 }
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
-    background-color: var(--cor02);
+    background-color: var(--cor08);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--fontepadrao);
+    margin-top: 20px;
+    align-items: center;
+    padding-left: 250px;
+}
+.nav_itens{
+    list-style: none;
+    display: flex;
+}
+.nav_itens>li>a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--cor01);
+    font-weight: bold;
+    font-size: 20px;
 }
