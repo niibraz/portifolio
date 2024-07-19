@@ -3,18 +3,15 @@
 
 /* Extra small devices */
 @media only screen and (max-width: 600px) {
-    h1{
-        font-size: 25px;
-    }
-    h3{
-        font-size: 18px;
-    }
-    .links{
-        font-size: 15px;
-    }
-    body{
-        margin-left: -30px;
-    }
+   h1{
+    font-size: 25px;
+   }
+   h3{
+    font-size: 18px;
+   }
+   .links>li{
+    font-size: 15px;
+   }
 }
 
 :root{
@@ -38,33 +35,23 @@ body{
 
 
 /* Navegação */
-nav{
-    display: flex;
-    position: relative;
-    top: 60px;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo{
-    font-size: 30px;
-    color:#EDF2F4;
-    margin-left: 80px;
-}
-.logo:hover{
-    font-size: 25px;
-    transition: 0.5s;
-    scale: 0.9;
-    color: #915BF5;
-}
-.navigation> li {
-    list-style: none;
-    padding: 10px;
+.navbar {
     position: relative;
     color: #EDF2F4;
-    font-size: 30px;
-    margin-right: 80px;
+    padding: 50px 70px;
 }
-.navigation > li:hover{
+.nav-itens{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    list-style: none;
+}
+.sun:hover{
+    transition: 0.5s;
+    rotate: 30deg;
+    color: #915BF5;
+}
+.menu:hover{
     color: #915BF5;
     transition: 0.5s;
     transform: scale(1.2);
@@ -75,7 +62,7 @@ nav{
 .text{
     display: block;
     position: relative;
-    top: 120px;
+    padding-top: 30px;
     font-size: 18px;
     font-family: var(--fontepadrao);
     margin-left: 80px;
@@ -84,17 +71,22 @@ nav{
 .text>h1>span{
     color: #915BF5;
 }
-.links > ul{
+.text>h6{
+    font-weight: 400;
+}
+
+.links{
     list-style: none;
     display: flex;
     position: relative;
-    top: 180px;
+    padding-top: 50px;
     margin-left: 80px;
     color: #EDF2F4;
     font-family: var(--fontepadrao);
     font-weight: 500;
 }
-.links > ul > li {
+.links > li {
     margin-left: 50px;
+    align-items: center;
 }
 
