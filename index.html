@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="media/mao-acenando.png" type="image/x-icon">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <title>Hey!</title>
+    <script>
+        function toggleMenu() {
+    const menu = document.querySelector('#navigation');
+    menu.classList.toggle('show');
+  }
+
+    </script>
 </head>
-<body>
+    <body>
+        <header id="header">
+            
+            <div id="logo"><a href="#">Logo</a></div>
+            
+            <button id="botao_menu" onclick="toggleMenu()">☰</button>
+            
+            <nav id="navigation">
+                <ul id="menu">
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
+            </nav>
 
-    <nav class="navbar">
-        <div class="logo"><img src="media/logo-nii2.png" alt=""></div>
-       
-        <div class="links">
-            <ul class="nav-itens">
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About me</a></li>
-               <li><a href="#">Projects</a></li>
-               <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+        </header>
 
-</body>
+    </body>
 </html>
+                    
+            
