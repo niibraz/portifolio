@@ -5,13 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Hey!</title>
-    <script>
-        function toggleMenu() {
-    const menu = document.querySelector('#navigation');
-    menu.classList.toggle('show');
-  }
-
-    </script>
+    <script src="funcoes.js"></script>
 </head>
     <body>
         <header id="header">
@@ -22,14 +16,18 @@
             
             <nav id="navigation">
                 <ul id="menu">
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li class="menu_itens"><a href="#" onclick="toggleMenu()">Home</a></li>
+                    <li class="menu_itens"><a href="#">About Me</a></li>
+                    <li class="menu_itens"><a href="#">Contact</a></li>
+                    <li class="menu_itens"><a href="#">Projects</a></li>
                 </ul>
             </nav>
 
         </header>
 
+        <main>
+            <h1>Hey! My name is Niethilley <br> but u can call me Nii</h1>
+        </main>
     </body>
 </html>
                     
