@@ -2,8 +2,8 @@
   --fontepadrao:'Poppins', sans-serif;
   --cor01:#EDF2F4;
   --cor02:#1E1E1E;
-  --cor03:#6735FD;
-  --cor04:#A578F7;
+  --cor03:#1F702C;
+  --cor04:#0D3013;
 }
 
 body{
@@ -13,6 +13,9 @@ body{
     height: 100%;
     overflow-x: hidden;
     color: #EDF2F4;
+}
+section{
+  height: 100vh;
 }
 
 
@@ -30,7 +33,7 @@ body{
   align-items: center;
 }
 .logo{
-  font-size: 2.3em;
+  font-size: 1.5em;
   font-weight: 800;
   color: #EDF2F4;
   cursor: pointer;
@@ -49,37 +52,19 @@ body{
 }
 .nav_link:hover,
 .nav_link#active{
-  color: #A578F7;
-  border-bottom: 3px solid #A578F7;
+  border-bottom: 3px solid var(--cor03);
 }
 
-section{
-  width: 100vh;
-  height: 100vh;
-}
 
-/* Section 1 */
-section .home{
-  width: 100vh;
-  height: 100vh;
+/* Home */
+.home_content{
   position: absolute;
+  text-align: center;
 }
 .home_text{
-  margin: auto;
-  display: flex;
-  text-align: center;
-  justify-content: center;
+  position: relative;
 }
-.home_text>h1{
-  margin-left: 2.5em;
-  font-size: 18rem;
-  color: #EDF2F4;
+.home_text h1{
+  
 }
 
-.social_icons{
-  margin-left: 6em;
-}
-.social_icons a i{
-  color: #EDF2F4;
-  padding: 5px;
-}
