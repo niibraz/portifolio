@@ -2,8 +2,8 @@
   --fontepadrao:'Poppins', sans-serif;
   --cor01:#EDF2F4;
   --cor02:#1E1E1E;
-  --cor03:#1F702C;
-  --cor04:#0D3013;
+  --cor03:#A578F7;
+  --cor04:#6735FD;
 }
 
 body{
@@ -14,10 +14,17 @@ body{
     overflow-x: hidden;
     color: #EDF2F4;
 }
-section{
-  height: 100vh;
-}
 
+.circle{
+  position:fixed;
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 100%;
+  top: -20px;
+  left: -20px;
+  pointer-events: none;
+}
 
 /* Navbar */
 #header{
@@ -57,31 +64,85 @@ section{
 
 
 /* Home */
-.home_content{
-  position: relative;
-  
-}
-.home_text{
-  position: relative;
-  margin: 20px auto;
-}
-.home_text h1{
+.home{
   position: absolute;
-  top: 20%;
+  display: flex;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 10%);
-  color: #2b2b2b;
-  text-shadow: 1px 1px rgb(38, 38, 38), -1px -1px #111010;
-  font-size: 19rem;
-  z-index: 1;
+  translate: -50% -50%;
 }
-.home_text p{
-  color: #EDF2F4;
-  text-align: center;
+.home_content>h1{
+  font-size: 15rem;
+  font-weight: 900;
+}
+.content{
+  display: flex;
+  align-items: center;
   position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, 330%);
-  z-index: 2;
+  top: 75%;
+  left: 1%;
+}
+.content>h1{
+  margin-right: 10px;
+  font-size: 2.4rem;
+}
+.ponto{
+  display: flex;
+  background-color:#A578F7;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
+.ponto:nth-child(2){
+  animation-name: pular;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: .3s;
+}
+.ponto:nth-child(3){
+  margin-left: 5px;
+  animation-name: pular;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  margin-left: 5px;
+  animation-delay: .6s;
+}
+.ponto:nth-child(4){
+  animation-name: pular;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: .9s;
+  margin-left: 5px;
+}
+
+@keyframes pular{
+  50%{
+      transform: translatey(-12px);
+  }
+  100%{
+      transform: translatey(0px);
+  }
+} 
+
+
+.social_icons{
+  position: absolute;
+  top: 120%;
+  left: -10%;
+}
+.social_icons>a{
+  color: #EDF2F4;
+}
+.social_icons>a:nth-child(1){
+  margin-right: 5px;
+}
+.social_icons>a:nth-child(2){
+  margin-right: 5px;
+}
+.social_icons>a:nth-child(3){
+  margin-right: 5px;
+}
