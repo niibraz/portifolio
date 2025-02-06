@@ -60,10 +60,6 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 .home_content{
   width: 900px;
@@ -77,11 +73,9 @@ body{
   color: #6735FD;
   animation: words 15s infinite;
 }
-
 .typing_text span{
   position: relative;
 }
-
 .typing_text>span::after{
   content: "";
   background-color: #1E1E1E;
@@ -92,7 +86,6 @@ body{
   right: -8;
   animation: cursor 0.8s infinite;
 }
-
 @keyframes cursor{
   to{
     border-left: 3px solid #6735FD;
@@ -115,7 +108,6 @@ body{
     content: "Cloud Engennier";
   }
 }
-
 .social_icons{
   display: flex;
   position: relative;
@@ -135,4 +127,41 @@ body{
 }
 .social_icons>a:nth-child(4){
   margin-left: 20px;
+}
+
+
+/* Skills */
+
+.skills{
+  /* display: flex; */
+  position: relative;
+  top: 230px;
+  left: 44.5%;
+  translate: -50% -50%;
+  width: 900px;
+}
+.skills_content>h1{
+  font-size: 1.8rem;
+}
+.skills_content>h1>span{
+  color: #6735FD;
+}
+
+.languages_content{
+  display: flex;
+  margin-top: 50px;
+}
+.boxes{
+  text-align: center;
+  font-size: 0.7em;
+  height: 200px;
+  width: 300px;
+  background-color: #262626;
+  border-radius: 25px;
+}
+#box02{
+  margin-left: 30px;
+}
+.boxes>h2{
+  margin-top: 35px;
 }
