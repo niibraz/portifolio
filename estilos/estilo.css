@@ -1,5 +1,5 @@
 :root{
-  --fontepadrao:'Poppins', sans-serif;
+  --fontepadrao:'Lexend Deca', sans-serif;
   --cor01:#EDF2F4;
   --cor02:#1E1E1E;
   --cor03:#A578F7;
@@ -8,7 +8,7 @@
 
 body{
     background-color: var(--cor02);
-    font-family:'Poppins', sans-serif;
+    font-family:'Lexend Deca', sans-serif;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -67,6 +67,9 @@ body{
 .home_content>h1{
   font-size: 2rem;
   font-weight: 800;
+}
+.home_content p {
+  padding-top: 15px;
 }
 .typing_text>span::before{
   content: "Software Developer";
